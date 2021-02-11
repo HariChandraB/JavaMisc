@@ -1,18 +1,24 @@
-Public class RemoveDuplicates{
+package Strings;
 
-public static void main(String[] args){
-String string = "aabbccdefatafaz";
+import java.util.LinkedHashSet;
+import java.util.Set;
 
-char[] chars = string.toCharArray();
-Set<Character> charSet = new LinkedHashSet<Character>();
-for (char c : chars) {
-    charSet.add(c);
-}
+public class RemoveDuplicates {
 
-StringBuilder sb = new StringBuilder();
-for (Character character : charSet) {
-    sb.append(character);
-}
-System.out.println(sb.toString());
-}
+	public static void main(String[] args) {
+		String string = "aabbccdefatafaz";
+
+		char[] chars = string.toCharArray();
+		Set<Character> charSet = new LinkedHashSet<Character>();
+		for (char c : chars) {
+		    charSet.add(c);
+		}
+
+		StringBuilder sb = new StringBuilder();
+		for (Character character : charSet) {
+		    sb.append(character);
+		}
+		System.out.println(sb.toString());
+	}
+
 }
